@@ -7,6 +7,6 @@
 
 - [X] Layout desktop
 - [X] Layout mobile
-- [] Layout tablet
-- [] Navegation pages
+- [ ] Layout tablet
+- [ ] Navegation pages
 
