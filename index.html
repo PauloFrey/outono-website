@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Outono Website Design | Paulo Frey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <!--Menu Retrátil-->
+    <nav class="menu" id="menu">
+        <i class="fas fa-bars" id="barras" onclick="menuLateral()"></i>
+        <ul>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#produtos">Trabalhos</a></li>
+            <li><a href="#rodape">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!--Conteudo principal da página-->
+    <main class="corpo" id="#">
+        <div class="c-conteudo">
+            <ul>
+                <li><h1>OUTONO</h1></li>
+                <li><h3>Website responsivo criado em HTML, CSS e Javascript.</h3></li>
+                <li><button class="botao" id="btn-comprar">Comprar agora</button></li>
+            </ul>
+        </div>
+
+        <a href="#sobre" id="ler-mais"><i class="fas fa-arrow-down"></i></a>
+    </main>
+    
+    <!--Conteudo sobre-->
+    <div class="sobre" id="sobre">
+        <div class="s-conteudo">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis accusantium</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis quos ra
+                tione nulla nihil sint delectus aliquid eos dolorum, cumque similique unde corru
+                pti modi quia ea odio aut ad eaque la nihil sint delamet consectetur adipisicing elit. Fugit reici.
+            </p>            
+        </div>
+    </div>
+
+    <!--Demonstração de produtos-->
+    <div class="produtos" id="produtos">
+        <section class="p-conteudo" id="box-um">
+            <div class="p-img">
+                <img src="imagens/outono-um.jpg" alt="teste">
+            </div>
+
+            <div class="p-textos">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+            </div>
+        </section>
+
+        <section class="p-conteudo" id="box-dois">
+            <div class="p-img" id="img-meio">
+                <img src="imagens/outono-dois.jpg" alt="teste">
+            </div>
+
+            <div class="p-textos" id="textos-meio">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+            </div>
+        </section>
+
+        <section class="p-conteudo" id="box-tres">
+            <div class="p-img">
+                <img src="imagens/outono-tres.jpg" alt="teste">
+            </div>
+
+            <div class="p-textos">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+            </div>
+        </section>
+    </div>
+
+    <!--Conteudo Rodapé-->
+    <footer class="rodape" id="rodape">
+        <div class="r-resumo">
+            <ul class="resumo-center">
+                <li><h1>Outono</h1></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing</p></li>
+                <li><button class="botao">Ler mais</button></li>
+            </ul>
+        </div>
+
+        <div class="final">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+            <p>Feito por Paulo Queiroz</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

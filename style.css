@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url(imagens/background.jpg);
+    background-size: 100% 625px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.botao{/*Estilo geral dos botões*/
+    width: 170px;
+    height: 65px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: 2px white solid;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao:hover{
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+
+/*Menu
+-----------------------------*/
+.menu{
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background-color: #cf5135;
+    opacity: 90%;
+    transition: 1s;
+}
+
+#barras{
+    position: fixed;
+    right: 50px;
+    top: 40px;
+    color: white;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2.4rem;
+}
+
+#barras:hover{
+    font-size: 2.5rem;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    line-height: 79px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 0 12px 0 12px;
+}
+
+.menu ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu ul li a:hover{
+    font-size: 1.3rem;
+}
+
+/*Seção principal da página
+------------------------------------------------------*/
+.corpo{
+    height: 625px;
+}
+
+.c-conteudo{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: fit-content;
+}
+
+.c-conteudo ul{
+    list-style: none;
+}
+
+.c-conteudo ul li{
+    margin-bottom: 25px;
+}
+
+.c-conteudo ul li h1{
+    border: solid white;
+    height: 100px;
+    line-height: 90px;
+    border-width: 3px 0 3px 0;
+    width: 290px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+}
+
+.c-conteudo ul li h3{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ler-mais{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size:2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    transition: 1s;
+}
+
+#ler-mais:hover{
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+
+/*Sobre
+-------------------------------------------------*/
+.sobre{
+    height: 625px;
+    background-color: #ad422a;
+}
+
+.s-conteudo{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.s-conteudo hr{
+    margin: 25px 0 25px 0;
+    border: 1px solid rgb(177, 83, 83);
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.s-conteudo p{
+    color:rgb(241, 201, 201);
+    font-size: 1.1rem;
+}
+
+/*Parte dos produtos
+----------------------------------------*/
+.produtos{
+    height: 1250px;
+}
+
+.p-conteudo{
+    height: 416px;
+    position: relative;
+}
+
+.p-img{
+    width: 450px;
+    position: absolute;
+    top: 0;
+    height: 416px;
+}
+
+#img-meio{
+    right: 0;
+}
+
+#textos-meio{
+    left: 120px;
+}
+
+.p-img img{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+    #box-um{
+        background-color: #cf5135;
+    }
+    #box-dois{
+        background-color: #d65f44;   
+    }
+    #box-tres{
+        background-color: #e47259;    
+    }
+
+.p-textos{
+    position: absolute;
+    width: 50%;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.p-textos h1{
+    margin-bottom: 25px;
+}
+
+.p-textos p{
+    color: #f3dcd6;
+}
+
+/*Seção de rodapé
+------------------------------------------------*/
+.rodape{
+    height: 625px;
+    color: white;
+}
+
+.r-resumo{
+    height: 320px;
+}
+
+.resumo-center{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.resumo-center li{
+    padding: 12px;
+}
+
+.final{
+    background-color: #cf5135;
+    opacity: 90%;
+    height: 305px;
+}
+
+.final p{
+    position: relative;
+    left: 50%;
+    top: 45%;
+    width: fit-content;
+    margin-top: 25px;
+    transform: translate(-50%,-50%);
+    font-size: 1.2rem;
+}
+
+.final ul{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top:45%;
+    width: fit-content;
+}
+
+.final ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+}
+
+.final ul li i{
+    font-size: 1.8rem;
+}
+
+/*Responsividade
+-------------------------------*/
+@media (max-width: 540px){/*mobile*/
+    /*Menu*/
+    #barras{
+        right: 20px;
+        font-size: 2.2rem;
+    }
+    #barras:hover{
+        font-size: 2.2rem;
+    }
+
+    .menu ul li{
+        margin: 0 8px 0 8px;
+    }
+
+    .menu ul li a{
+        font-size: 1rem;
+    }
+
+    /*sobre*/
+    .s-conteudo{
+        width: 75%;
+    }
+
+    .s-conteudo h1{
+        font-size: 1.4rem;
+    }
+
+    /*trabalhos*/
+    .produtos{
+        height: fit-content;
+    }
+
+    .p-conteudo{
+        height: 800px;
+    }
+
+    .p-img{
+        position: relative;
+        width: 100%;
+    }
+
+    .p-textos{
+        position: relative;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        text-align: center;
+    }
+    #textos-meio{
+        position: relative;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
